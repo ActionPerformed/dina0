@@ -1,1 +1,1 @@
-web: java -jar target/dependency/dina0-runner.jar
+web: java -jar target/DiscordBot-1.0-SNAPSHOT-shaded.jar
