@@ -22,6 +22,7 @@ public class Main extends ListenerAdapter{
 	private static DinBuilder builder;
 
 	public static void main(String[] args) throws LoginException, InterruptedException {
+		System.out.println("TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST");
 		CommandClientBuilder commandClientBuilder = new CommandClientBuilder();
 //        commandClientBuilder.setOwnerId(ResourceBundle.getBundle("config/Config").getString(Constants.OWNER_ID));
 //		commandClientBuilder.setOwnerId(args[0]);
