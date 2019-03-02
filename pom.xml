@@ -9,5 +9,8 @@
   
   <modules>
     <module>DiscordBot</module>
-  </modules>
+  </modules>	
+  <properties>
+    <maven.deploy.skip>true</maven.deploy.skip>
+  </properties>
 </project>
