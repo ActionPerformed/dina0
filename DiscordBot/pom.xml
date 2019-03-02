@@ -18,6 +18,16 @@
                         <id>copy-dependencies</id>
                         <phase>package</phase>
                         <goals><goal>copy-dependencies</goal></goals>
+                        <configuration>
+	                        <artifactItems>
+	                            <artifactItem>
+	                                <groupId>com.github.ActionPerformed</groupId>
+	                                <artifactId>dina0-runner</artifactId>
+	                                <version>1.0-SNAPSHOT</version>
+	                                <destFileName>dina0-runner.jar</destFileName>
+	                            </artifactItem>
+	                        </artifactItems>
+						</configuration>
                     </execution>
                 </executions>
             </plugin>
