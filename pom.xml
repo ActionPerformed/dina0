@@ -5,9 +5,5 @@
 	<groupId>bot.discord</groupId>
 	<artifactId>ManagerBot</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-  
-  <modules>
-    <module>DiscordBot</module>
-  </modules>	
+	<packaging>pom</packaging>	
 </project>
