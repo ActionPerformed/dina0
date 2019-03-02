@@ -1,1 +1,1 @@
-web: java -jar target/dina0-runner.jar
+web: java -jar target/dependency/dina0-runner.jar
