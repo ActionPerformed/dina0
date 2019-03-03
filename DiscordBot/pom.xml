@@ -25,7 +25,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>bot.discord.Main</mainClass>
+							<mainClass>bot.main.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -36,7 +36,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-
 				</configuration>
 			</plugin>
 			<plugin>
@@ -44,15 +43,25 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>
-								bot.discord.Main
-							</mainClass>
+							<mainClass>bot.main.Main</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
 				</configuration>
+			</plugin>
+			<plugin>
+			      <!-- Build an executable JAR -->
+			      <groupId>org.apache.maven.plugins</groupId>
+			      <artifactId>maven-jar-plugin</artifactId>
+			      <configuration>
+				<archive>
+				  <manifest>
+				    <mainClass>bot.main.Main</mainClass>
+				  </manifest>
+				</archive>
+			      </configuration>
 			</plugin>
 		</plugins>
 		<resources>
