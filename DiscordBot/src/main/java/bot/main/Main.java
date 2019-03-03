@@ -22,11 +22,10 @@ public class Main extends ListenerAdapter{
 	private static DinBuilder builder;
 
 	public static void main(String[] args) throws LoginException, InterruptedException {
-		System.out.println("TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST");
 		CommandClientBuilder commandClientBuilder = new CommandClientBuilder();
 //        commandClientBuilder.setOwnerId(ResourceBundle.getBundle("config/Config").getString(Constants.OWNER_ID));
-//		commandClientBuilder.setOwnerId(args[0]);
-		commandClientBuilder.setOwnerId(System.getenv("DC_ID"));
+		commandClientBuilder.setOwnerId(args[0]);
+//		commandClientBuilder.setOwnerId(System.getenv("DC_ID"));
         commandClientBuilder.setPrefix(">");
         commandClientBuilder.useDefaultGame();
         commandClientBuilder.addCommand(new AuthorCommand());
@@ -36,8 +35,8 @@ public class Main extends ListenerAdapter{
 		
 		builder = new DinBuilder(AccountType.BOT);
 //		builder.setToken(ResourceBundle.getBundle("config/Config").getString(Constants.OAUTH_TOKEN));
-//		builder.setToken(args[1]);
-		builder.setToken(System.getenv("DC_TK"));
+		builder.setToken(args[1]);
+//		builder.setToken(System.getenv("DC_TK"));
 		builder.addEventListener(commandClientBuilder.build());
 		builder.buildAsync();
 	}
