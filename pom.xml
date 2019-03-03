@@ -10,17 +10,6 @@
 	<build>
 		<plugins>
 		    <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-assembly-plugin</artifactId>
-			<configuration>
-			    <archive>
-				<manifest>
-				    <mainClass>bot.main.Main</mainClass>
-				</manifest>
-			    </archive>
-			</configuration>
-		    </plugin>
-		    <plugin>
 			<artifactId>maven-assembly-plugin</artifactId>
 			<executions>
 			    <execution>
@@ -34,6 +23,11 @@
 			    <descriptorRefs>
 				<descriptorRef>jar-with-dependencies</descriptorRef>
 			    </descriptorRefs>
+				<archive>
+				<manifest>
+				    <mainClass>bot.main.Main</mainClass>
+				</manifest>
+			    </archive>
 			</configuration>
 		    </plugin>
 			<plugin>
